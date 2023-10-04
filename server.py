@@ -19,7 +19,9 @@ def send_dms():
     Interact(cl, message, hashtags)
 
     return jsonify({'result': 'Direct messages sent successfully'})
-
+@app.route('/api', methods=["GET"])
+def hello():
+    return jsonify({"message":"works"})
 def Connect(username, password):
     ''' Log onto Instagram '''
     cl = instagrapi.Client()
