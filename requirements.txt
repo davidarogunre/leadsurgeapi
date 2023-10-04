@@ -1,3 +1,4 @@
 flask
 instagrapi
 flask-cors
+Pillow
